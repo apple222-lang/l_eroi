@@ -1,0 +1,128 @@
+/* ===== 黑金 + 星空 自定义样式 ===== */
+
+:root {
+  --gold: #d4af37;
+  --gold-light: #f0e2b6;
+  --gold-soft: #e8c65a;
+  --ink: #0a0a0f;
+  --panel: #12121a;
+}
+
+/* 星空背景：多层星点 + 缓慢闪烁 */
+body {
+  background-color: var(--ink) !important;
+  background-image:
+    radial-gradient(1px 1px at 25px 35px, rgba(255, 255, 255, .85), transparent 100%),
+    radial-gradient(1px 1px at 140px 90px, rgba(240, 226, 182, .75), transparent 100%),
+    radial-gradient(1.6px 1.6px at 70px 170px, rgba(212, 175, 55, .9), transparent 100%),
+    radial-gradient(1px 1px at 200px 40px, rgba(255, 255, 255, .55), transparent 100%),
+    radial-gradient(1.2px 1.2px at 300px 200px, rgba(255, 255, 255, .8), transparent 100%),
+    radial-gradient(1px 1px at 360px 120px, rgba(232, 198, 90, .7), transparent 100%) !important;
+  background-size: 420px 420px, 380px 380px, 460px 460px, 520px 520px, 560px 560px, 640px 640px !important;
+  background-attachment: fixed !important;
+  color: #d8d3c6;
+}
+
+/* 卡片：半透明黑 + 金边 + 微光（Fluid 的容器是 #board） */
+#board, .board {
+  background-color: rgba(12, 12, 18, .93) !important;
+  border: 1px solid rgba(212, 175, 55, .42) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 0 34px rgba(212, 175, 55, .13), inset 0 0 50px rgba(212, 175, 55, .03) !important;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
+/* 导航栏：黑底 + 金色下边线 */
+#navbar {
+  background-color: rgba(10, 10, 15, .9) !important;
+  border-bottom: 1px solid rgba(212, 175, 55, .3) !important;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+#navbar .navbar-brand, #navbar .nav-link {
+  color: var(--gold-light) !important;
+  letter-spacing: .06em;
+}
+#navbar .nav-link:hover, #navbar .navbar-brand:hover {
+  color: var(--gold) !important;
+  text-shadow: 0 0 12px rgba(212, 175, 55, .65);
+}
+
+/* 标题：金色渐变字 */
+h1, h2, h3, h4, h5 {
+  color: var(--gold-light) !important;
+}
+.post-content h2, .post-content h3 {
+  background: linear-gradient(90deg, #f7ecc9, #d4af37);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 链接 */
+a { color: var(--gold-soft); }
+a:hover { color: #fff2c2; text-shadow: 0 0 10px rgba(212, 175, 55, .5); }
+
+/* 按钮 / 标签：金边 */
+.btn, .tag, .chip {
+  border: 1px solid rgba(212, 175, 55, .45) !important;
+  background: rgba(212, 175, 55, .08) !important;
+  color: var(--gold-light) !important;
+}
+.btn:hover, .tag:hover {
+  background: rgba(212, 175, 55, .22) !important;
+  box-shadow: 0 0 16px rgba(212, 175, 55, .35);
+}
+
+/* 首页大图：叠加金色暗角，让星星更突出 */
+.banner {
+  background-color: var(--ink);
+}
+.banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 40%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, .55) 100%);
+  pointer-events: none;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar { width: 9px; height: 9px; }
+::-webkit-scrollbar-track { background: #0d0d13; }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #d4af37, #8a6f1f);
+  border-radius: 6px;
+}
+
+/* 引用块：金色左边线 */
+blockquote {
+  border-left: 3px solid var(--gold) !important;
+  background: rgba(212, 175, 55, .06) !important;
+}
+
+/* 选中文字 */
+::selection { background: rgba(212, 175, 55, .35); color: #fff; }
+
+
+/* 阅读进度条：改成金色 */
+#progress, .progress, #reading-progress, .reading-progress {
+  background: linear-gradient(90deg, #f0e2b6, #d4af37) !important;
+  height: 3px !important;
+  box-shadow: 0 0 12px rgba(212, 175, 55, .8);
+}
+
+/* 站点标题：金色渐变 */
+#navbar .navbar-brand {
+  background: linear-gradient(90deg, #f7ecc9, #d4af37);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+
+/* banner 标题与副标题：加金色光晕 */
+.banner-text, .banner .h1, .banner .h2 {
+  text-shadow: 0 0 22px rgba(212, 175, 55, .55), 0 2px 8px rgba(0, 0, 0, .6);
+}
