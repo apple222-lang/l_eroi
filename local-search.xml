@@ -5,8 +5,8 @@
   
   <entry>
     <title>你好，星空</title>
-    <link href="/I_eroi/2026/11/03/hello-world/"/>
-    <url>/I_eroi/2026/11/03/hello-world/</url>
+    <link href="/l_eroi/2026/11/03/hello-world/"/>
+    <url>/l_eroi/2026/11/03/hello-world/</url>
     
     <content type="html"><![CDATA[<p>这是一篇示例文章，用来验证 <strong>Fluid + 黑金星空</strong> 主题的效果。</p><span id="more"></span><h2 id="主题说明"><a href="#主题说明" class="headerlink" title="主题说明"></a>主题说明</h2><ul><li>主色调：黑金（<code>#d4af37</code>）</li><li>背景：固定星空（多层星点，缓慢闪烁）</li><li>卡片：半透明黑底 + 金色描边</li></ul><blockquote><p>这段引用块会显示金色左边线。</p><p>你可以直接在 <code>source/_posts/</code> 里改这篇文章，或者新建自己的文章。</p></blockquote><h2 id="代码块效果"><a href="#代码块效果" class="headerlink" title="代码块效果"></a>代码块效果</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">greet</span>(<span class="hljs-params">name: <span class="hljs-built_in">str</span></span>) -&gt; <span class="hljs-built_in">str</span>:<br>    <span class="hljs-keyword">return</span> <span class="hljs-string">f&quot;你好，<span class="hljs-subst">&#123;name&#125;</span>！&quot;</span><br></code></pre></td></tr></table></figure><h2 id="列表与链接"><a href="#列表与链接" class="headerlink" title="列表与链接"></a>列表与链接</h2><ol><li>写文章：<code>hexo new &quot;标题&quot;</code></li><li>本地预览：<code>hexo server</code></li><li>发布上线：<code>hexo clean &amp;&amp; hexo deploy</code></li></ol><p>更多用法见 <a href="https://hexo.io/zh-cn/docs/">Hexo 文档</a>。</p><hr><p><em>这篇文章是配置主题时自动生成的示例，删除 <code>source/_posts/hello-world.md</code> 即可移除。</em></p>]]></content>
     
