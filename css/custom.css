@@ -126,3 +126,18 @@ blockquote {
 .banner-text, .banner .h1, .banner .h2 {
   text-shadow: 0 0 22px rgba(212, 175, 55, .55), 0 2px 8px rgba(0, 0, 0, .6);
 }
+
+/* 页脚「无界」：金色 + 宽字距 + 微光 */
+footer .footer-inner .footer-content,
+footer .footer-inner .footer-content span {
+  color: #d4af37 !important;
+  letter-spacing: .35em;
+  font-size: 15px;
+  font-weight: 500;
+  text-shadow: 0 0 14px rgba(212, 175, 55, .5);
+}
+
+footer .footer-inner .footer-content a {
+  color: #f0e2b6 !important;
+  letter-spacing: .1em;
+}
